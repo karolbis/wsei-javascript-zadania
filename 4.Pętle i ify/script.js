@@ -66,14 +66,55 @@ for(let i = 0; i <=100; i++){
     }
   }
 //Zadanie 8
+//a
 
-let star = 5;
+
+ let star = 5;
 let result = '';
 
-for(let i = 1; i <= star; i++){
-  for(let j = 0; j < i; j++){
-    result += "*";
-  }
-  console.log(result);
-  result = ""
+ for(let i = 1; i <= star; i++){
+    for(let j = 0; j < i; j++){
+          result += "*";
+     }
+     console.log(result);
+          result = ""
+ }
+
+//b)
+let count = 4;
+for (let i = 1; i <= 5; i++) {
+	console.log(' '.repeat(count) + '* '.repeat(i));
+	count--;
+}
+
+//c)
+let count1 = 4;
+for (let i = 1; i <= 10; i++) {
+	if (i % 2 !== 0) {
+		console.log(' '.repeat(count1) + '*'.repeat(i) + ' '.repeat(count1));
+		count1--;
+	}
+}
+
+//d
+let str = '*1234';
+for (j = 0; j <= 11; j++) {
+	if (j === 6) {
+		console.log('------');
+	} else if (j < 6) {
+		console.log('*'.repeat(j) + str.slice(j));
+	} else {
+		console.log('*'.repeat(12 - j) + str.slice(12 - j));
+	}
+}
+
+//e
+let count2 = 4;
+for (let i = 1; i <= 6; i++) {
+	if (i <= 5) {
+		console.log(' '.repeat(count2) + '* '.repeat(i));
+		count2--;
+	} else {
+		console.log('    *');
+	}
 }
